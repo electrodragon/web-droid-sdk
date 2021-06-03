@@ -1,0 +1,16 @@
+---
+- SomeAgent:
+    method: POST
+    arguments:
+      - arg1: string
+      - arg2: string
+- OtherAgent:
+    method: POST
+    arguments:
+      - arg1: string
+      - arg2: string
+      - arg3: {type: bool, true-comparison: === '1'}
+      - arg4: string
+      - arg5: int, 0
+      - arg6: {type: bool, true-comparison: === '1'}
+...

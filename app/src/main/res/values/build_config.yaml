@@ -1,0 +1,19 @@
+---
+# Fill this file as per (production & local) configuration of database and root_package of project.
+# Root package is the directory path from root of domain. if site is not be going to be in root,
+# Then path to sub-root_directory will be root_package. After Modification of this file you have to
+# rebuild the project for changes to take effect.
+- RELEASE_CONFIG: # This will be used in production build
+   - DB_HOSTNAME: "localhost"
+   - DB_USERNAME: "db_user_101"
+   - DB_PASSWORD: "db_password"
+   - DB_NAME: "db_name"
+   - ROOT_PACKAGE: ""
+
+- LOCAL_CONFIG: # This will be used in local build
+   - DB_HOSTNAME: "localhost"
+   - DB_USERNAME: "root"
+   - DB_PASSWORD: ""
+   - DB_NAME: "database_name_here"
+   - ROOT_PACKAGE: "/Project"
+...
